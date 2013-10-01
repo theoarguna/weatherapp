@@ -1,0 +1,296 @@
+/****************
+TABLE OF CONTENTS
+
+Line #      Name
+ 15         Base
+ 86         Layout
+109         Module
+138         State
+194         Theme
+*****************/
+
+
+
+
+/*  BASE  */
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End Reset */
+
+body {
+	font-family: 'MuseoSans_500', helvetica, tahoma, arial, sans-serif;
+}
+
+h1 {	
+	font-size: 30px;
+}
+
+p {
+	font-size: 15px;
+	font-weight: lighter;
+	margin: 15px 0;
+	line-height: 24px;
+}
+
+a {
+	color:white;
+	text-decoration: none;
+	letter-spacing:9px;
+	font-family:lato;
+}
+
+
+/*  LAYOUT  */
+html{ 
+  background: url(img/bag.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1{
+	letter-spacing: 11px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	font-weight: 600;
+	font-family: 'PT Sans Caption',helvetica, sans-serif;
+	font-size: 80px;
+	margin-left: -20px;
+	color:white;
+
+}
+h1{
+	display:block;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.67em;
+	-webkit-margin-start: 0px;
+
+}
+
+
+
+
+.wrap{
+	text-align: center;
+}
+
+hr{
+	width: 20%;
+	border: 2px solid;
+	margin: 0 auto;
+	color:white;
+}
+
+.moveleft{
+	margin-left: -30px;
+}
+
+.content-container {
+	height: auto;
+	width: 560px;
+
+}
+
+.location {
+	width: 400px;
+}
+
+.spaced-top {
+	margin-top: 60px;
+}
+
+.spaced-top-bottom {
+	margin: 30px auto;
+}
+
+.to-center {
+	margin: 0 auto;
+}
+
+.current-location{
+	margin-left: 100px;
+
+	
+
+}
+
+/***  MODULE  ***/
+button {
+	background-color: #77933C;
+	border: 1px solid #77933C;
+	border-radius: 100%;
+	color: #fff;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.circle {
+	border-radius: 100%;
+	height: 500px;
+	width: 500px;
+}
+
+.title {
+	color: #555;
+	display: block;
+	font-family: 'raleway_thin', helvetica, tahoma, arial, sans-serif;
+	font-size: 28px;
+	font-weight: bolder;
+	line-height: 480px;
+	width: 500px;
+}
+.smaller-container{
+	display:left;
+}
+
+
+/***  STATE  ***/
+.cold {
+	background-color: #00B0F0;
+	border: 2px solid #00B0F0;
+	-moz-transition:background-color 1s, border 1s;
+    -webkit-transition:background-color 1s, border 1s;
+    -o-transition:background-color 1s, border 1s;
+    transition:background-color 1s, border 1s;
+}
+
+.frozen {
+	background-color: #005D7E;
+	border: 2px solid #005D7E;
+	-moz-transition:background-color 1s, border 1s;
+    -webkit-transition:background-color 1s, border 1s;
+    -o-transition:background-color 1s, border 1s;
+    transition:background-color 1s, border 1s;
+}
+
+.hot {
+	background-color: #953735;
+	border: 2px solid #953735;
+	-moz-transition:background-color 1s, border 1s;
+    -webkit-transition:background-color 1s, border 1s;
+    -o-transition:background-color 1s, border 1s;
+    transition:background-color 1s, border 1s;
+}
+
+.lukewarm {
+	background-color: #DBD40A;
+	border: 2px solid #DBD40A;
+	-moz-transition:background-color 1s, border 1s;
+    -webkit-transition:background-color 1s, border 1s;
+    -o-transition:background-color 1s, border 1s;
+    transition:background-color 1s, border 1s;
+}
+
+.unfilled {
+	background-color: #fff;
+	border: 2px solid #aaa;
+}
+
+.warm {
+	background-color: #DC6C0A;
+	border: 2px solid #DC6C0A;
+	-moz-transition:background-color 1s, border 1s;
+    -webkit-transition:background-color 1s, border 1s;
+    -o-transition:background-color 1s, border 1s;
+    transition:background-color 1s, border 1s;
+}
+
+.white-text {
+	color: #fff;
+}
+
+
+/***  THEME  ***/
+/*@font-face {
+    font-family: 'MuseoSans_500';
+    src: url('fonts/MuseoSans_500-webfont.eot');
+    src: url('fonts/MuseoSans_500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MuseoSans_500-webfont.woff') format('woff'),
+         url('fonts/MuseoSans_500-webfont.ttf') format('truetype'),
+         url('fonts/MuseoSans_500-webfont.svg#MuseoSans_500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway_thin';
+    src: url('fonts/raleway_thin-webfont.eot');
+    src: url('fonts/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/raleway_thin-webfont.woff') format('woff'),
+         url('fonts/raleway_thin-webfont.ttf') format('truetype'),
+         url('fonts/raleway_thin-webfont.svg#raleway_thin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+.center-text {
+	text-align: center;
+	
+	color:#d8d8d8;
+}
+
+.credit-text {
+	font-size: 10px;
+}
+
+.location-text {
+	font-size: 20px;
+
+	font-weight: 600;
+	font-family: 'PT Sans Caption',helvetica, sans-serif;
+	color:white;
+	line-height: 30px;
+	
+}
+
+.more-data {
+	font-size: 12px;
+}
+
